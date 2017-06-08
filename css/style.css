@@ -1,0 +1,24 @@
+.site-header {
+	background-color: rgba(0, 0, 0, 0.59);
+	color: white;
+}
+
+#page-content {
+	margin-top: 30px;
+}
+
+.cat-name {
+	font-weight: bold;
+	font-size: large;
+}
+
+#page-content {
+	display: table;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#admin-area {
+	margin-top: 30px;
+}

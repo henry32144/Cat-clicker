@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Cat Clicker</title>
+</head>
+<body>
+  <!--bootstrap 的 navbar-->
+  <header class="site-header">
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Cat</a>
+        </div>
+        <div>
+          <!--bootstrap 的 下拉菜單-->
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Choose a Cat
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu" id="cat-menu">   
+                      
+                    </ul>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Title-->
+    <div class="container title">
+      <div class="row">
+        <h1 class="col-md-12 text-center">Cat Clicker</h1>
+      </div>
+    </div>
+  </header>
+  <!--頁面內容-->
+  <div class="container" id="page-content">
+      <div class="cat-content text-thin">
+        <div class="row" >
+            <div class="cat">
+              <p class="cat-name">Apple</p>
+              <img id="cat-0p" class="img-responsive" src="img/cat0.jpg" onclick="catClick(this.id)">
+              <p>Number of Clicks : 0</p>
+            </div>
+        </div>
+      </div>
+      <div id="admin-area">
+        <div class="row">
+          <button id="admin-button" type="button" class="btn btn-default col-md-2" onclick="adminClick()">Admin</button>
+          <div id="admin-function">
+            <form class="form-horizontal col-md-10" role="form">
+              <div class="form-group">
+                <label for="name" class="col-md-2 control-label">Name</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="change-name" 
+                       placeholder="Input name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="number" class="col-md-2 control-label">Number</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="change-number" 
+                       placeholder="">
+                </div>
+              </div>
+            <button id="admin-cancel" type="button" class="btn btn-default" onclick="adminCancel()">Cancel</button>
+            <button id="admin-save" type="button" class="btn btn-primary" onclick="adminSave()">Save</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+</body>
+</html>
